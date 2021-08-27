@@ -1,4 +1,4 @@
-# Azure Landing zone
+# Azure Red Team Landing zone
 
 **Description**
 
