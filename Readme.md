@@ -2,6 +2,12 @@
 
 ### Original Source: https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md
 
+### PreReq Requirements and free training
+
+[Webcast: OPSEC Fundamentals for Remote Red Teams](https://www.blackhillsinfosec.com/webcast-opsec-fundamentals-for-remote-red-teams/)
+
+[EDITED EDITION — Getting Started in Pentesting The Cloud–Azure | Beau Bullock | 1-Hour](https://www.youtube.com/watch?v=u_3cV0pzptY)
+
 ## Summary
 
 * [Azure Recon Tools](#azure-recon-tools)
