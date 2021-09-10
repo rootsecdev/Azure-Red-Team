@@ -10,6 +10,14 @@ Original Source:[Swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThing
 
 [Workshop:Breaching The Cloud Perimeter w/ Beau Bullock](https://www.blackhillsinfosec.com/breaching-the-cloud-perimeter-w-beau-bullock/)
 
+[Microsoft Penetration Testing](https://docs.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
+
+[Penetration Testing Rules of Engagement](https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement?rtc=3)
+
+## Current Bug Bounties
+
+[Azure SSRF Research Challenge](https://www.microsoft.com/en-us/msrc/azure-ssrf-research-challenge)
+
 ## Commando VM
 
 Repo Location: [Commando VM](https://github.com/fireeye/commando-vm)
