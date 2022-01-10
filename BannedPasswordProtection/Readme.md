@@ -46,7 +46,9 @@ cat test.txt | awk '{print $6}' > wordlist.txt
 
 **Troubleshooting:**
 
-Issue: Access is Denied message when spraying different passwords at a user account. 
+Issue: 
+
+Access is Denied message when spraying different passwords at a user account. 
 
 Solution: Run PowerShell in administrative mode. Verify you can reset the target password manually. Sometimes you may need to wait a few minutes before you run Set-ADAccountPassword. 
 
