@@ -17,7 +17,7 @@ Password History Minumum and Maximum age should be disabled or not configured. I
 
 **Software and Domain Requirements:**
 
-Active Directory Domain controller 
+Active Directory Domain controller (Preferably in a lab environment)
 
 Azure Active Directory Connect syncing user accounts to Azure
 
