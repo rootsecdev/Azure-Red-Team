@@ -3,17 +3,17 @@
 This repository contains various scripts for penetration testers and red teams. Its a work in progress. 
 
 ## BadPass.ps1
-Usage: This script can be ran against a wordlist to test weak passwords with Azure AD Banned Password Protection turned on in a on prim Active Directory tenant. This is useful for penetration testers and red teams when evaluating password security on low and slow password spray approaches on valid active directory user accounts.  Make sure you run this in a elevated administrative PowerShell session. RSAT tools and password reset capability is required. 
+Usage: This script can be ran against a wordlist to test weak passwords with Azure AD Banned Password Protection turned on in a on prim Active Directory Lab tenant. This is useful for penetration testers and red teams when evaluating password security on low and slow password spray approaches on valid active directory user accounts.  Make sure you run this in a elevated administrative PowerShell session. RSAT tools and password reset capability is required. 
 
-**Active Directory Configuration:**
+**Active Directory Lab Configuration:**
 
 Password History Minumum and Maximum age should be disabled or not configured. In a Server 2022 AD Domain the default password length is 7 characters.
 
-Insert Screenshot
+![](https://github.com/rootsecdev/Azure-Red-Team/blob/master/BannedPasswordProtection/Screenshots/AzureADBanned1.png)
   
 **Banned Password Configuration**
 
-
+![](https://github.com/rootsecdev/Azure-Red-Team/blob/master/BannedPasswordProtection/Screenshots/AzureADBanned2.png)
 
 **Software and Domain Requirements:**
 
@@ -30,16 +30,20 @@ End user account licensed with Azure AD Premium P1 or P2
 Windows 10 Workstation or newer with RSAT tools installed.
 
 **Mandatory Arguments and Usage:**
--File
-
--User
-
--User requires a samaccountname user id. 
 
 ```
 Import-Module C:\Users\userid\BadPass.ps1
 Invoke-BadPass -File Wordlist.txt -user userid
 ```
+
+**Output all success statuses into your own wordlist**
+```
+grep Success! Output1.txt > test.txt
+
+cat test.txt | awk '{print $6}' > wordlist.txt
+```
+
+
 **Troubleshooting:**
 
 Issue: Access is Denied message when spraying different passwords at a user account. 
