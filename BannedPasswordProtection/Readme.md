@@ -29,6 +29,8 @@ End user account licensed with Azure AD Premium P1 or P2
 
 Windows 10 Workstation or newer with RSAT tools installed.
 
+Bring your own wordlist!!
+
 **Mandatory Arguments and Usage:**
 
 ```
