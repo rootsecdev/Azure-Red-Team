@@ -3,7 +3,9 @@
 This repository contains various scripts for penetration testers and red teams. Its a work in progress. 
 
 ## BadPass.ps1
-Usage: This script can be ran against a wordlist to test weak passwords with Azure AD Banned Password Protection turned on in a on prim Active Directory Lab tenant. This is useful for penetration testers and red teams when evaluating password security on low and slow password spray approaches on valid azure active directory user accounts.  Make sure you run this in a elevated administrative PowerShell session. RSAT tools and password reset capability is required. 
+**Usage:**
+
+This script can be ran against a wordlist to test weak passwords with Azure AD Banned Password Protection turned on in a on prim Active Directory Lab tenant. This is useful for penetration testers and red teams when evaluating password security on low and slow password spray approaches on valid azure active directory user accounts.  Make sure you run this in a elevated administrative PowerShell session. RSAT tools and password reset capability is required. 
 
 **Active Directory Lab Configuration:**
 
