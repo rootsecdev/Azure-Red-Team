@@ -23,7 +23,7 @@ Active Directory Domain controller (Preferably in a lab environment)
 
 Azure Active Directory Connect syncing user accounts to Azure
 
-Azure AD Password Proctection DC Agent
+Azure AD Password Protection DC Agent
 
 Azure AD Password Protection Proxy
 
