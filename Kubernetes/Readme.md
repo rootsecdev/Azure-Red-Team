@@ -14,16 +14,14 @@ Pay attention to DNS names from NMAP scan outputs as they can give away that you
 
 **Discovering Kubernetes Clusters with Kube Hunter:**
 
+Note: You can do single IP addresses or entire subnet ranges with this tool. If on a penetration testing engagement this should be helpful for fingerprinting kubernetes clusters and developing a quick win on potential pod misconfigurations. 
+
 Software URL:https://github.com/aquasecurity/kube-hunter
 
 Installation:
 ```
 sudo pip3 install kube-hunter
 ```
-
-Example Output:
-
-[Insert Screenshot Here]
 
 ### Initial Exploitation
 
@@ -40,12 +38,8 @@ cat /var/run/secrets/kubernetes.io/serviceaccount/token
 ```
 
 ```
-export TOKEN={TOKEN]
+export TOKEN={TOKEN}
 ```
-
-Example Output:
-
-[Insert Screenshot Here]
 
 **Checking your permissions with the current token that you have(remote command):**
 ```
