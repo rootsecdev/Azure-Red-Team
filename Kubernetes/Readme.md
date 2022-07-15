@@ -60,7 +60,7 @@ kubectl --server https://serverip:port --token=$TOKEN --insecure-skip-tls-verify
 
 This is basically the same thing as above with the exception that you are dropping the --server command
 
-ProTip: If you need to do file transfers to a pod. Its very possible you may be in a pod without wget or curl commands. Normally I am only transferring kubectl and a poisoned pod of some sort. Pwncat-cs has been an excellent choice not only from an upload standpoint but you will have a nice full tty session to work with as well. 
+ProTip: If you need to do file transfers to a pod. Its very possible you may be in a pod without wget or curl commands. Normally I am only transfer kubectl and a poisoned pod of some sort. Pwncat-cs has been an excellent choice not only from an upload standpoint but you will have a nice full tty session to work with as well. 
 
 Github: https://github.com/calebstewart/pwncat
 
