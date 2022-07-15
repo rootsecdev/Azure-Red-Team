@@ -145,4 +145,10 @@ If Isolated from internet include this in your yaml config:
 imagePullPolicy: IfNotPresent
 ```
 
-Always make note of your mount point when breaking out from a pod. This will be in your 
+Always make note of your mount point when breaking out from a pod. This will be in your yaml config of your bad pod. For example this will make your mount point at /host:
+
+```
+volumeMounts:
+    - mountPath: /host
+      name: noderoot
+```
