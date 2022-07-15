@@ -152,3 +152,7 @@ volumeMounts:
     - mountPath: /host
       name: noderoot
 ```
+## Penetration Testing Resources on Kubernetes
+
+**Try Hack Me Rooms:**
+
