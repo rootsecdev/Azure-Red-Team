@@ -24,7 +24,10 @@ sudo pip3 install kube-hunter
 ```
 
 Run Kube hunter:
+
+```
 kube-hunter
+```
 
 ### Initial Exploitation
 
