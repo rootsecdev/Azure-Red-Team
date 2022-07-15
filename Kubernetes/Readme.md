@@ -135,3 +135,14 @@ kubectl --server https://10.10.103.214:6443 --token=$TOKEN --insecure-skip-tls-v
 
 ### Escaping with bad pods
 
+URL Reference: https://github.com/BishopFox/badPods
+
+**Tips and Tricks with bad pods:**
+
+If Isolated from internet include this in your yaml config:
+
+```
+imagePullPolicy: IfNotPresent
+```
+
+Always make note of your mount point when breaking out from a pod. This will be in your 
