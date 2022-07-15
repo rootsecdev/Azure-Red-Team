@@ -168,5 +168,6 @@ Kubernetes for Everyone: https://tryhackme.com/room/kubernetesforyouly
 
 Island Orchestration: https://tryhackme.com/room/islandorchestration
 
-**Hack the box rooms**
+**Hack The Box rooms**
+
 Unobtainium: https://app.hackthebox.com/machines/Unobtainium
