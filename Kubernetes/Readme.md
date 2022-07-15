@@ -7,7 +7,7 @@ These are a collection of methods and tools I've found useful on pentesting Kube
 **Discovery with nmap (Sample with IP Address):**
 
 ```
-nmap -A -T4 -p- -oA Kubernetes1 10.10.197.28
+nmap -sC -sV -p- -oA Kubernetes1 10.10.197.28
 ```
 
 Pay attention to DNS names from NMAP scan outputs as they can give away that you are working with a Kubernetes environment when you have a cluster operating on a non standard port. 
@@ -22,6 +22,9 @@ Installation:
 ```
 sudo pip3 install kube-hunter
 ```
+
+Run Kube hunter:
+kube-hunter
 
 ### Initial Exploitation
 
