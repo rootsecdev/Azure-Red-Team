@@ -156,3 +156,17 @@ volumeMounts:
 
 **Try Hack Me Rooms:**
 
+Insekube: https://tryhackme.com/room/insekube
+
+Frank & Herby make an app: https://tryhackme.com/room/frankandherby
+
+Frank and Herby try again: https://tryhackme.com/room/frankandherbytryagain
+
+PalsForLife: https://tryhackme.com/room/palsforlife
+
+Kubernetes for Everyone: https://tryhackme.com/room/kubernetesforyouly
+
+Island Orchestration: https://tryhackme.com/room/islandorchestration
+
+**Hack the box rooms**
+Unobtainium: https://app.hackthebox.com/machines/Unobtainium
