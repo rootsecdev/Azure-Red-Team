@@ -20,6 +20,8 @@ Configure kubectl to connect to your Kubernetes cluster:
 az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
 ```
 
+If you are on a administrative VM with WSL or linux box. You can and should loot the .kube directory!
+
 ### Discovery and Enumeration
 **Discovery with nmap (Sample with IP Address):**
 
