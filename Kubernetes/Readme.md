@@ -3,6 +3,23 @@
 ## Description
 These are a collection of methods and tools I've found useful on pentesting Kubernetes Clusters. 
 
+References to setup an AKS Cluster in Azure:
+https://docs.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal?tabs=azure-cli
+
+### Microsoft Recon
+
+If you have some Microsoft creds that have access to an AKS cluster
+
+Login:
+```
+az login
+```
+
+Configure kubectl to connect to your Kubernetes cluster:
+```
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+```
+
 ### Discovery and Enumeration
 **Discovery with nmap (Sample with IP Address):**
 
