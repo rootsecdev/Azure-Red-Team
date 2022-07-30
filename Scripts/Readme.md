@@ -1,3 +1,3 @@
 # Description
 
-This is a scripting repo that can be using on authorized peneration testing engagements. 
+This is a scripting repo that can be useful on authorized peneration testing engagements. 
