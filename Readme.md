@@ -16,7 +16,7 @@ Original Source:[Swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThing
 
 ## Current Bug Bounties
 
-[Azure SSRF Research Challenge](https://www.microsoft.com/en-us/msrc/azure-ssrf-research-challenge)
+
 
 ## Commando VM
 
