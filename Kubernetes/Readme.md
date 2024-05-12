@@ -190,3 +190,7 @@ Island Orchestration: https://tryhackme.com/room/islandorchestration
 **Hack The Box rooms**
 
 Unobtainium: https://app.hackthebox.com/machines/Unobtainium
+
+**References**
+
+What is The Kubenomicon?: https://kubenomicon.com/
