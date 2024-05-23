@@ -1,14 +1,28 @@
-# Azure Active Directory
+# Microsoft Cloud Red Team
+### Disclaimer
+The original source of this repository started from the Swisskyrepo. Over time I have slowly added other content in from my own Cloud Penetration Testing experience or other publicly available sources, blogs...etc. Some of the content in here has not been updated in several years. Similar content may appear in training courses. Under no circumstances has this repository reproduced the content of paid training.      
 
-Original Source:[Swisskyrepo](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md)
+### Original Repo Sources
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Cloud%20-%20Azure%20Pentest.md
 
-## PreReq Requirements and free training
+(New Location):https://swisskyrepo.github.io/InternalAllTheThings/
+
+## Azure Training Courses
+
+[Altered Security: Attack & Defend Azure](https://www.alteredsecurity.com/azureadlab)
+
+
+
+## Free Training
 
 [Webcast: OPSEC Fundamentals for Remote Red Teams](https://www.blackhillsinfosec.com/webcast-opsec-fundamentals-for-remote-red-teams/)
 
 [EDITED EDITION — Getting Started in Pentesting The Cloud–Azure | Beau Bullock | 1-Hour](https://www.youtube.com/watch?v=u_3cV0pzptY)
 
 [Workshop:Breaching The Cloud Perimeter w/ Beau Bullock](https://www.blackhillsinfosec.com/breaching-the-cloud-perimeter-w-beau-bullock/)
+
+
+## Azure Rules of Engagement
 
 [Microsoft Penetration Testing](https://docs.microsoft.com/en-us/azure/security/fundamentals/pen-testing)
 
