@@ -1,6 +1,7 @@
 import requests
 import json
 import base64
+import re
 
 # This script requires a token from graph.microsoft.com
 
@@ -29,7 +30,8 @@ if response.status_code == 200:
         # Check if the email has an HTML body
         if email['body']['contentType'] == 'html':
             # Save the HTML body to a file
-            with open(subject + '.html', 'w') as f:
+            name = re.sub('[^a-zA-Z0-9 \n\.]', '', subject)
+            with open(name + '.html', 'w') as f:
                 f.write(body)
             print('HTML email downloaded:', subject + '.html')
     print('All emails downloaded.')
