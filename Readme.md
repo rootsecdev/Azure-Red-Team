@@ -212,6 +212,7 @@ Post Commando Tools to install: [Connect to all Microsoft 365 services in a sing
     # Administrator
     $ Create-Backdoor, Execute-Backdoor
     ```
+* **Darkmoon** - open source (GPLv3) autonomous penetration testing platform. 50 specialist agents over MCP drive 50+ offensive tools across web, API, Active Directory, Kubernetes and cloud, each finding backed by proof of exploitation. Self hosted, with a privacy gateway that tokenizes sensitive target values before any cloud model sees them. https://github.com/ASCIT31/Dark-Moon
     
 ## Enumeration
 
